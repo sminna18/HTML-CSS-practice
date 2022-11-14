@@ -1,0 +1,158 @@
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+.composition {
+    height: 500px;
+    width: 680px;
+    margin: 40px auto;
+    background-color: #b3ddeb;
+    position: relative;
+    overflow: hidden;
+}
+.road {
+    position: absolute;
+    bottom: 0px;
+}
+.car {
+    position: absolute;
+    bottom: -5px;
+}
+.tree {
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+}
+.sun {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+}
+/*Pseudo*/
+.pseudo-title {
+    margin:0;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+/*.pseudo-title:before {
+    content: "1.";
+    font-size: 25px;
+}*/
+.pseudo-title:after {
+    content: "";
+    display: block;
+    margin: 5px auto;
+    width: 120px;
+    height: 3px;
+    background-color: aquamarine;    
+}
+.pseudo-title:before {
+    content: "";
+    display: block;
+    margin-left: -60px;
+    width: 120px;
+    height: 3px;
+    background-color: #db3a4c;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;   
+}
+.pseudo-text p:first-letter {
+    color: #ff004e;
+    font-size: 40px;
+}
+/*CSS3*/
+.element {
+   width: 400px;
+    height: 400px;
+    background-color: antiquewhite;
+    margin: 20px auto;
+    border-radius: 15px 60px;
+    box-shadow: 5px 5px 10px #ada2a2 inset, 5px 5px 5px #5d5a5a;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0.7;
+}
+.element-title {
+   text-shadow: 4px 4px #ccc; 
+}
+
+/*Page*/
+
+.page {
+    margin: 20px auto;
+    width: 800px;
+}
+.content {
+    display: flex;
+    padding: 20px;
+}
+.header {
+    align-items: center;
+    display: flex;
+    /*flex-direction: column;*/
+    padding: 20px;
+    background-color: #eee;
+    justify-content:space-between;
+}
+.header-item {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.header-logo {
+    order: 2;
+}
+
+.header-tell{
+    order: 1;
+}
+.header-lang{
+    order: 3;
+}
+.sidebar {
+    padding: 20px;
+    width: 15%;
+    background-color: #333;
+}
+.main {
+    padding: 20px;
+    width: 70%;
+    background:#888; 
+}
+.footer {
+    padding: 20px;
+    background-color: #4ea5a5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
